@@ -1,0 +1,190 @@
+version: "3.1"
+
+nlu:
+  - intent: greet
+    examples: |
+      - hey
+      - hello
+      - hi
+      - good morning
+      - good evening
+      - hola
+      - hey there
+      - hi there
+      - greetings
+      - howdy
+      
+  - intent: ask_destination_info
+    examples: |
+      - tell me about [Paris](location)
+      - what can you tell me about [Tokyo](location)
+      - i want to know more about [New York](location)
+      - give me information about [Dubai](location)
+      - show me details of [London](location)
+      - what's it like in [Singapore](location)
+      - tell me about visiting [Barcelona](location)
+      - what should i know about [Rome](location)
+      - information about [Sydney](location)
+      - details about [Bangkok](location)
+      - what's the weather like in [Berlin](location)
+      - tell me about the attractions in [Amsterdam](location)
+      - what can i do in [Istanbul](location)
+      - tell me about tourist spots in [Cairo](location)
+      - i want to visit [Rio de Janeiro](location)
+      - planning to go to [Venice](location)
+      - thinking about visiting [Prague](location)
+      - considering a trip to [Seoul](location)
+      - want to explore [Mumbai](location)
+      - interested in [Vancouver](location)
+
+  - intent: ask_weather
+    examples: |
+      - what's the weather like in [Paris](location)
+      - temperature in [London](location)
+      - is it raining in [New York](location)
+      - weather forecast for [Tokyo](location)
+      - how's the weather in [Dubai](location)
+      - climate in [Singapore](location)
+      - current temperature in [Sydney](location)
+      - weather conditions in [Berlin](location)
+      - what should i pack for [Moscow](location)
+      - is it hot in [Cairo](location)
+
+  - intent: request_recommendations
+    examples: |
+      - suggest places to visit
+      - where should i go for vacation
+      - recommend me a destination
+      - where can i travel with [family](traveler_type)
+      - best places for [solo](traveler_type) travel
+      - where to go for [adventure](travel_style)
+      - recommend [beach](destination_type) destinations
+      - where to go for [hiking](activity)
+      - good places for [cultural](travel_style) tourism
+      - [budget](price_range) friendly destinations
+      - [luxury](price_range) travel destinations
+      - where to go in [summer](season)
+      - best places for [winter](season) vacation
+      - recommend [cheap](price_range) places to visit
+      - where can i go with [5000](budget) dollars
+      - places to visit under [3000](budget)
+      - [romantic](travel_style) destinations
+      - [historical](destination_type) places to visit
+      - where to go for [food](interest) tourism
+      - best [shopping](activity) destinations
+
+  - intent: book_travel
+    examples: |
+      - i want to book a trip to [Paris](location)
+      - help me plan a vacation to [Tokyo](location)
+      - book tickets to [New York](location)
+      - planning a trip to [London](location) in [June](travel_season)
+      - want to visit [Dubai](location) next [month](travel_season)
+      - book a holiday in [Bali](location)
+      - need tickets for [Rome](location)
+      - arrange travel to [Amsterdam](location)
+      - book accommodation in [Barcelona](location)
+      - plan my trip to [Singapore](location)
+      - i want to go to [Paris](location)
+      - looking to visit [Sydney](location)
+      - need to book hotels in [Berlin](location)
+      - planning vacation in [Prague](location)
+      - want to travel to [Venice](location) in [December](travel_season)
+
+  - intent: specify_dates
+    examples: |
+      - [next week](travel_season)
+      - [tomorrow](travel_season)
+      - in [June](travel_season)
+      - [December 25](travel_season)
+      - [summer](travel_season)
+      - [winter break](travel_season)
+      - during [Christmas](travel_season)
+      - [next month](travel_season)
+      - [spring](travel_season) vacation
+      - [autumn](travel_season) holiday
+      - [26-11-2024](travel_season)
+      - [15/12/2024](travel_season)
+      - [2024-07-01](travel_season)
+
+  - intent: specify_budget
+    examples: |
+      - my budget is [5000](budget) dollars
+      - i can spend [3000](budget)
+      - around [10000](budget)
+      - under [2000](budget)
+      - maximum [7500](budget)
+      - [budget](price_range) friendly
+      - [luxury](price_range) options
+      - [cheap](price_range) alternatives
+      - [expensive](price_range) hotels
+      - [mid-range](price_range) accommodations
+      - [1000](budget) per person
+      - looking for [affordable](price_range) options
+      - [high-end](price_range) resorts
+      - [economic](price_range) choices
+
+  - intent: ask_activities
+    examples: |
+      - what can i do in [Paris](location)
+      - activities in [London](location)
+      - tourist attractions in [Tokyo](location)
+      - places to visit in [Dubai](location)
+      - things to do in [New York](location)
+      - tourist spots in [Rome](location)
+      - show me attractions in [Barcelona](location)
+      - what to see in [Amsterdam](location)
+      - must-visit places in [Singapore](location)
+      - popular activities in [Berlin](location)
+
+  - intent: ask_transportation
+    examples: |
+      - how to get around [Paris](location)
+      - transport in [London](location)
+      - public transportation in [Tokyo](location)
+      - best way to travel in [New York](location)
+      - getting around [Dubai](location)
+      - local transport in [Rome](location)
+      - metro system in [Barcelona](location)
+      - cab services in [Amsterdam](location)
+      - bus routes in [Singapore](location)
+      - rental cars in [Berlin](location)
+
+  - intent: goodbye
+    examples: |
+      - bye
+      - goodbye
+      - see you later
+      - thanks bye
+      - goodbye for now
+      - catch you later
+      - have a good day
+      - bye bye
+      - catch you later
+      - have to go
+
+  - intent: affirm
+    examples: |
+      - yes
+      - indeed
+      - of course
+      - that sounds good
+      - correct
+      - yeah
+      - perfect
+      - great
+      - amazing
+      - wonderful
+
+  - intent: deny
+    examples: |
+      - no
+      - never
+      - I don't think so
+      - don't like that
+      - no way
+      - not really
+      - nope
+      - not interested
+      - maybe later
+      - not now

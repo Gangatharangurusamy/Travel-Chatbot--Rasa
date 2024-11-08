@@ -1,0 +1,36 @@
+[
+  {
+    "tag_name": "entity",
+    "ids_to_tags": {
+      "1": "B-budget",
+      "2": "I-budget",
+      "3": "L-budget",
+      "4": "U-budget",
+      "5": "B-location",
+      "6": "I-location",
+      "7": "L-location",
+      "8": "U-location",
+      "9": "B-travel_season",
+      "10": "I-travel_season",
+      "11": "L-travel_season",
+      "12": "U-travel_season",
+      "0": "O"
+    },
+    "tags_to_ids": {
+      "B-budget": 1,
+      "I-budget": 2,
+      "L-budget": 3,
+      "U-budget": 4,
+      "B-location": 5,
+      "I-location": 6,
+      "L-location": 7,
+      "U-location": 8,
+      "B-travel_season": 9,
+      "I-travel_season": 10,
+      "L-travel_season": 11,
+      "U-travel_season": 12,
+      "O": 0
+    },
+    "num_tags": 13
+  }
+]

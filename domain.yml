@@ -1,0 +1,131 @@
+version: "3.1"
+
+intents:
+  - greet
+  - ask_destination_info
+  - ask_weather
+  - request_recommendations
+  - book_travel
+  - specify_dates
+  - specify_budget
+  - ask_activities
+  - ask_transportation
+  - goodbye
+  - affirm
+  - deny
+
+entities:
+  - location
+  - travel_season
+  - budget
+  - price_range
+  - traveler_type
+  - travel_style
+  - destination_type
+  - activity
+  - interest
+  - season
+
+slots:
+  location:
+    type: text
+    influence_conversation: true
+    mappings:
+      - type: from_entity
+        entity: location
+  
+  travel_season:
+    type: text
+    influence_conversation: true
+    mappings:
+      - type: from_entity
+        entity: travel_season
+  
+  budget:
+    type: text
+    influence_conversation: true
+    mappings:
+      - type: from_entity
+        entity: budget
+  
+  price_range:
+    type: text
+    influence_conversation: true
+    mappings:
+      - type: from_entity
+        entity: price_range
+  
+  traveler_type:
+    type: text
+    influence_conversation: true
+    mappings:
+      - type: from_entity
+        entity: traveler_type
+  
+  travel_style:
+    type: text
+    influence_conversation: true
+    mappings:
+      - type: from_entity
+        entity: travel_style
+  
+  destination_type:
+    type: text
+    influence_conversation: true
+    mappings:
+      - type: from_entity
+        entity: destination_type
+  
+  activity:
+    type: text
+    influence_conversation: true
+    mappings:
+      - type: from_entity
+        entity: activity
+
+responses:
+  utter_greet:
+    - text: "Hi! I'm your travel assistant. How can I help you plan your next adventure?"
+    - text: "Hello! Ready to explore the world? Let me help you plan your perfect trip!"
+    - text: "Welcome! Looking for travel inspiration or help with planning? I'm here to assist!"
+
+  utter_ask_preferences:
+    - text: "What type of travel experience are you looking for? (e.g., adventure, relaxation, cultural)"
+    - text: "Do you have any specific preferences? Like beach destinations, historical sites, or adventure activities?"
+
+  utter_ask_budget:
+    - text: "What's your budget range for this trip?"
+    - text: "How much would you like to spend on this vacation?"
+
+  utter_ask_dates:
+    - text: "When are you planning to travel?"
+    - text: "What's your preferred travel time?"
+
+  utter_ask_location:
+    - text: "Which destination would you like to explore?"
+    - text: "Where would you like to travel to?"
+
+  utter_goodbye:
+    - text: "Have a great trip! Feel free to come back if you need more travel advice."
+    - text: "Goodbye! Hope I helped you plan your perfect vacation!"
+    - text: "Safe travels! Don't hesitate to ask if you need more information."
+
+  utter_iamabot:  # Add this missing response
+    - text: "I am a bot, here to assist you with travel planning!"
+
+
+actions:
+  - action_greet
+  - action_get_destination_info
+  - action_provide_recommendations
+  - action_facilitate_booking
+  - action_handle_travel_date
+  - action_complete_booking
+  - action_suggest_activities
+  - action_get_transportation_info
+  - action_parse_user_input
+  - action_default_fallback
+
+session_config:
+  session_expiration_time: 60  # minutes
+  carry_over_slots_to_new_session: true

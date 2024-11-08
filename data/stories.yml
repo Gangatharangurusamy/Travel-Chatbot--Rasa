@@ -1,0 +1,52 @@
+version: "3.1"
+
+stories:
+  - story: ask about destination
+    steps:
+      - intent: ask_destination_info
+        entities:
+          - location: "Paris"
+      - action: action_get_destination_info
+      - action: action_suggest_activities
+
+  - story: ask weather and book
+    steps:
+      - intent: ask_weather
+        entities:
+          - location: "London"
+      - action: action_get_destination_info
+      - intent: book_travel
+        entities:
+          - location: "London"
+      - action: action_facilitate_booking
+
+  - story: complete booking flow
+    steps:
+      - intent: book_travel
+        entities:
+          - location: "Tokyo"
+      - action: action_facilitate_booking
+      - intent: specify_dates
+        entities:
+          - travel_season: "June"
+      - action: action_handle_travel_date
+      - intent: specify_budget
+        entities:
+          - budget: "5000"
+      - action: action_complete_booking
+
+  - story: ask for recommendations
+    steps:
+      - intent: request_recommendations
+      - action: action_provide_recommendations
+      - action: utter_ask_preferences
+
+  - story: interactive recommendation flow
+    steps:
+      - intent: request_recommendations
+        entities:
+          - travel_style: "adventure"
+          - budget: "3000"
+      - action: action_provide_recommendations
+      - intent: ask_destination_info
+      - action: action_get_destination_info

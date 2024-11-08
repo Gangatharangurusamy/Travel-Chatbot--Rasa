@@ -1,0 +1,15 @@
+{
+  "lookup": {
+    "eJyLrq6NBQAEOAGx": "action_listen",
+    "eJw1y1EKhDAMBNCr5AAiu7+9SiklW6IEa7LY6E/p3Q24+zfDvIl9TNC/B10Zi7FKgP6ELLhTgF+p3IzEbatqzVHVgo+P7/mVfDkbHT6QGBuTm/g3aQIWv1uABQtXNjTKH9WNZR0j3fZjMbU=": "action_facilitate_booking",
+    "eJy1zjEKwzAMBdCr6AChpKuvYoxRjVpEXCnESheTu1eQZMvQpZvEfx9+7NsAfV7ok7EYqwTo+5EF3xTgeCo3I3HbqlpzVLXg7uP9NiZP1kaLByTGxuQmniYNwOJ1C/DEwpUNjfJDdWJ5bb8NuCj+ZUz6AvJSZog=": "action_listen",
+    "eJzFkEEKAjEMRa/SAxTRba9SSomdOARrO7Sxm9K7GxiFLkTduUv474dHbB9a9a1g8xCYcjKq74NPcEOjnkukypiErTFzFSjmADtvT4ejk+ResUiAiYkJhbEvxmlFSeps1AUCRWJg9Oecr5TW8ZvAm+L/ZL59Qysu0DD6RW5/kpqwyWsrudGCfkrHcA/8UZ67": "action_handle_travel_date",
+    "eJzFkNEKwjAMRX+lH1BEX/cro5TYRQ3WdLSxL2P/vsAUKojuSd8S7rnhkH6arZnGjNVDEErcmWkdPMMNO/NYIhVBVrbEJEWhmAKsfH/Y7Z0m94JZA2QhIVSmfzLOGmKtS2dOECiSgKA/pnQlPs/bBN4U/yfz7RvWSIaK0Q96+5NUgzVeY06VBvRNulHsAjzE1+JPJd0CAdfbtQ==": "action_listen",
+    "eJyLrq7VUaguKEoti09MLsnMz7NSqIYw4vMSc1OtFKCcnMziktQ8oNrS4tQioJrMPCC3xEqhoCi/LDMlNb4oNTk/Nzc1LyURpLy4tjYWAB+UIw4=": "action_provide_recommendations",
+    "eJyLrq7VUaguKEoti09MLsnMz7NSqIYw4vMSc1OtFKCcnMziktQ8oNrS4tQioJrMPCC3xEqhoCi/LDMlNb4oNTk/Nzc1LyURpLy4ljhTcekm3ppYAEz7S3w=": "action_listen",
+    "eJyLrq7VUaguKEoti09MLsnMz7NSqIYw4vMSc1OtFKCcnMziktQ8oNrS4tQioJrMPCC3xEohvSg1taS2NhYA6dwbhQ==": "action_greet",
+    "eJyLrq7VUaguKEoti09MLsnMz7NSqIYw4vMSc1OtFKCcnMziktQ8oNrS4tQioJrMPCC3xEohvSg1taSWODMganEZEQsAdEg04Q==": "action_listen",
+    "eJylzsEKwjAMBuBXyQMM0WtfpZRStiiBLpUm81L67ga7zavgLT/5+BPf+gTtWfEV06xU2EEbQ+S0ooM9ZBJFNrsJVjPEFtXBoyJq/61j2L8qzjckFxVDucxpeH+7XMO33apJCc34w4QJzpuocUFR4s8mEt9L7+EN/7Rl0w==": "action_get_destination_info",
+    "eJy1j8EKwjAMhl8lDzBEr32VUkqZmQRqKk3cpezdF1adFw8D8ZaQL1/++LYM0B4V55hGpcIOWi8ipzs6eDWZRJGNfQpWY4itVQe3iqjLMUdnf1LsMSQXFYNyGVPn/eV0Dh+7qUkJjfFvJgyw30SNVxQl3iaReCpHv/i2+qdAYQU02ZyC": "action_listen"
+  }
+}
