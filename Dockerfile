@@ -8,13 +8,17 @@ WORKDIR /app
 COPY requirements.txt .
 
 # Install the Python dependencies
-RUN pip install --no-cache-dir -r requirements.txt
+RUN pip install --default-timeout=100 --no-cache-dir -r requirements.txt
+
 
 # Copy the entire project
 COPY . .
 
 # Install frontend dependencies
 WORKDIR /app/frontend
+# Install Node.js and npm
+RUN apt-get update && apt-get install -y nodejs npm
+
 RUN npm install
 
 # Set the command to run the Rasa server, actions server, and frontend

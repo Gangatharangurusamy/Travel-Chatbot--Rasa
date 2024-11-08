@@ -7,7 +7,30 @@ This chatbot is built with the Rasa framework to assist users with travel-relate
 1. **Travel Inquiries**: Provides details on destinations, top attractions, weather updates, and travel tips.
 2. **Personalized Recommendations**: Suggestions based on user preferences like budget, travel style, and season.
 3. **Booking and Activity Assistance**: Facilitates bookings and provides activity suggestions for chosen destinations.
-
+### Folder Structure
+```bash
+├── .rasa/             # Rasa model files
+├── actions/           # Custom action definitions in `actions.py`
+├── data/              # Training data for NLU and stories
+├── frontend/          # React frontend for the chatbot interface
+│   ├── public/        # Static files for the frontend
+│   ├── src/           # React component files
+│   ├── node_modules/  # Node.js modules for frontend dependencies
+│   ├── package.json   # Frontend dependencies and scripts
+│   ├── package-lock.json # Lock file for dependencies
+│   └── README.md      # README for frontend specifics
+├── models/            # Saved Rasa models
+├── tests/             # Test cases for chatbot features
+├── venv/              # Python virtual environment (not included in repo)
+├── .env               # Environment variables for API keys
+├── .gitignore         # Files and directories to ignore in Git
+├── config.yml         # Rasa pipeline and policies configuration
+├── credentials.yml    # Credentials for messaging channels and APIs
+├── Dockerfile         # Docker setup for containerization
+├── domain.yml         # Defines intents, entities, slots, and responses
+├── endpoints.yml      # Endpoints configuration for action server
+└── requirements.txt   # Python dependencies for Rasa backend
+```
 ### Technical Stack
 - **Frontend**: Built with React and styled using Tailwind CSS.
 - **Backend**: Rasa framework for natural language understanding and response generation, with actions defined in `action.py`.
